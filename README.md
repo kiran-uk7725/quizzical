@@ -1,6 +1,6 @@
 # 💡 Quizzical - Trivia App
 
-**Quizzical** is an interactive trivia game built using **React** and the **Open Trivia Database (OTDB) API**. This application was created as the final solo capstone project for the [Scrimba Learn React Course](https://scrimba.com/learn/learnreact).
+**Quizzical** is an interactive trivia game built using **React** and the **Open Trivia Database API**.
 
 ---
 
