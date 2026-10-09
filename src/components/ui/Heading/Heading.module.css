@@ -1,0 +1,11 @@
+.headingBase{
+    color: var(--heading-color, #000);
+}
+
+.h1{
+    font-size: var(--font-size-h1);
+}
+
+.h2{
+    font-size: var(--font-size-h2);
+}

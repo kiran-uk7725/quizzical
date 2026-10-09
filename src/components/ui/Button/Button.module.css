@@ -1,0 +1,43 @@
+.btn {
+  border-radius: 15px;
+  font-family: inherit;
+  border: none;
+}
+
+.btn-size-lg {
+  padding: 1em 2.5em;
+  font-size: var(--font-size-btnLarge);
+  font-weight: 500;
+}
+
+.btn-size-sm {
+  padding: 0.75em 1em;
+  font-size: 0.8rem;
+}
+
+.btn-size-md {
+  padding: 1em 1.5em;
+  font-size: var(--font-size-btnDefault);
+}
+
+.btn-default {
+    background-color: var(--btn-bgcolor-default);
+    color: var(--btn-color-default);
+}
+
+.btn-wrong {
+  background-color: transparent;
+  color: red;
+  border: 3px solid red;
+}
+
+.btn-right {
+  background-color: transparent;
+  color: yellow;
+  border: 3px solid yellow;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+

@@ -1,0 +1,81 @@
+/* =========================
+  CSS Reset & Boilerplate
+   ========================= */
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-family: 'Karla', sans-serif;
+  --font-size-h1: 2rem;
+  --font-size-h2: 1rem;
+  --font-size-btnDefault: .625rem;
+  --font-size-btnLarge: 1rem;
+
+  /* colors */
+  --body-bg: #F5F7FB;
+  --heading-color: #293264;
+  --btn-color-default: #F5F7FB;
+  --btn-bgcolor-default: #4D5B9E;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: var(--font-family);
+  background-color: var(--body-bg);
+}
+
+/* Top-Right Yellow Blob */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;  /* Adjust size based on SVG dimensions */
+  height: 200px;
+  background: url('/src/assets/blob_tr.svg') no-repeat top right;
+  background-size: contain;
+  pointer-events: none; /* Allows user clicks to pass through to buttons underneath */
+  z-index: 0;
+}
+
+/* Bottom-Left Blue Blob */
+body::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;  /* Adjust size based on SVG dimensions */
+  height: 200px;
+  background: url('/src/assets/blob_bl.svg') no-repeat bottom left;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+@media (min-width: 600px) {
+  :root{
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 1.5rem;
+    --font-size-btnDefault: 1rem;
+    --font-size-btnLarge: 1.125rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --heading-color: #F5F7FB;
+    --body-bg: #293264;
+    --btn-color-default: #4D5B9E;
+    --btn-bgcolor-default: #F5F7FB;
+  }
+}
